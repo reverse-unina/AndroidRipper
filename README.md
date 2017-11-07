@@ -105,3 +105,27 @@ The following outputs are produced by Android Ripper:
 * **Execution Statistics** In the report.xml file
 * **GUI Model of the Application** in xml format, in the model folder
 
+## License
+
+GNU Affero General Public License, version 3
+
+Copyright (c) 2014-2017 REvERSE, REsEarch gRoup of Software Engineering @ the University of Naples Federico II, http://reverse.dieti.unina.it/
+
+This program is free software: you can redistribute it and/or  modify
+it under the terms of the GNU Affero General Public License, version 3,
+as published by the Free Software Foundation.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+## Open Source Library Beeing Used
+
+* [Robotium](https://github.com/RobotiumTech/robotium)
+* [gson](https://github.com/google/gson)
+* [Apache Commons](https://commons.apache.org/lang/)
+
