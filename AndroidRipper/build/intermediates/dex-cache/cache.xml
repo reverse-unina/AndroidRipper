@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/nicola/.gradle/caches/modules-2/files-2.1/com.jayway.android.robotium/robotium-solo/5.6.3/94ec2d7b23be9817d92905cc09124aecfc46d28c/robotium-solo-5.6.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="94ec2d7b23be9817d92905cc09124aecfc46d28c">
+        <dex dex="/home/nicola/dev/AndroidRipper/app/build/intermediates/pre-dexed/debug/robotium-solo-5.6.3_4187d400e9496908a68f147ab652dafdfd7adeed.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/nicola/dev/AndroidRipper/app/libs/ripper_shared.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="06da0a054c64d5f7758b3910b8a7c547a4ae8e0e">
+        <dex dex="/home/nicola/dev/AndroidRipper/app/build/intermediates/pre-dexed/debug/ripper_shared_a24ac8b407e59b1f6135d65b08f15e72be1c9c2f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/nicola/dev/AndroidRipper/app/libs/custom_gson_2.8.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="ee41b38952f1c342f2534ae4657e0194741f1a7d">
+        <dex dex="/home/nicola/dev/AndroidRipper/app/build/intermediates/pre-dexed/debug/custom_gson_2.8.1_00e1ba2bdb60c6ab60b608ccf0dd85f197fdb1ee.jar" />
+    </item>
+
+</items>

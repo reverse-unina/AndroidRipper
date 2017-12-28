@@ -136,7 +136,8 @@ public class WidgetEventPlanner {
 	 */
 	public boolean canPlanForWidget()
 	{
-		return mWidget != null && mWidget.isEnabled() && mWidget.isVisible(); // && mWidget.getSimpleType() != null && mWidget.getSimpleType().equals("") == false;
+		//return mWidget != null && mWidget.isEnabled() && mWidget.isVisible(); // && mWidget.getSimpleType() != null && mWidget.getSimpleType().equals("") == false;
+		return mWidget != null && mWidget.getId() != null && mWidget.getId().equals("") == false && mWidget.getId().equals("-1") == false && mWidget.isEnabled() && mWidget.isVisible(); // && mWidget.getSimpleType() != null && mWidget.getSimpleType().equals("") == false;
 	}
 	
 	/**

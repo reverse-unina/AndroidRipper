@@ -1,0 +1,39 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/laboratorio/AndroidRipper/AndroidRipper/app/src/main/AndroidManifest.xml:1:39-9:12
+INJECTED from /home/laboratorio/AndroidRipper/AndroidRipper/app/src/main/AndroidManifest.xml:1:39-9:12
+INJECTED from /home/laboratorio/AndroidRipper/AndroidRipper/app/src/main/AndroidManifest.xml:1:39-9:12
+INJECTED from /home/laboratorio/AndroidRipper/AndroidRipper/app/src/main/AndroidManifest.xml:1:39-9:12
+INJECTED from /home/laboratorio/AndroidRipper/AndroidRipper/app/src/main/AndroidManifest.xml:1:39-9:12
+INJECTED from /home/laboratorio/AndroidRipper/AndroidRipper/app/src/main/AndroidManifest.xml:1:39-9:12
+INJECTED from /home/laboratorio/AndroidRipper/AndroidRipper/app/src/main/AndroidManifest.xml:1:39-9:12
+	package
+		ADDED from /home/laboratorio/AndroidRipper/AndroidRipper/app/src/main/AndroidManifest.xml:1:158-191
+		INJECTED from /home/laboratorio/AndroidRipper/AndroidRipper/app/src/main/AndroidManifest.xml
+		INJECTED from /home/laboratorio/AndroidRipper/AndroidRipper/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /home/laboratorio/AndroidRipper/AndroidRipper/app/src/main/AndroidManifest.xml:1:132-157
+		INJECTED from /home/laboratorio/AndroidRipper/AndroidRipper/app/src/main/AndroidManifest.xml
+		INJECTED from /home/laboratorio/AndroidRipper/AndroidRipper/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/laboratorio/AndroidRipper/AndroidRipper/app/src/main/AndroidManifest.xml:1:49-107
+	android:versionCode
+		ADDED from /home/laboratorio/AndroidRipper/AndroidRipper/app/src/main/AndroidManifest.xml:1:108-131
+		INJECTED from /home/laboratorio/AndroidRipper/AndroidRipper/app/src/main/AndroidManifest.xml
+		INJECTED from /home/laboratorio/AndroidRipper/AndroidRipper/app/src/main/AndroidManifest.xml
+instrumentation
+ADDED from /home/laboratorio/AndroidRipper/AndroidRipper/app/src/main/AndroidManifest.xml:3:5-122
+	android:targetPackage
+		ADDED from /home/laboratorio/AndroidRipper/AndroidRipper/app/src/main/AndroidManifest.xml:3:76-120
+	android:name
+		ADDED from /home/laboratorio/AndroidRipper/AndroidRipper/app/src/main/AndroidManifest.xml:3:22-75
+application
+ADDED from /home/laboratorio/AndroidRipper/AndroidRipper/app/src/main/AndroidManifest.xml:5:5-7:19
+	android:label
+		ADDED from /home/laboratorio/AndroidRipper/AndroidRipper/app/src/main/AndroidManifest.xml:5:55-87
+	android:icon
+		ADDED from /home/laboratorio/AndroidRipper/AndroidRipper/app/src/main/AndroidManifest.xml:5:18-54
+uses-library#android.test.runner
+ADDED from /home/laboratorio/AndroidRipper/AndroidRipper/app/src/main/AndroidManifest.xml:6:9-59
+	android:name
+		ADDED from /home/laboratorio/AndroidRipper/AndroidRipper/app/src/main/AndroidManifest.xml:6:23-57

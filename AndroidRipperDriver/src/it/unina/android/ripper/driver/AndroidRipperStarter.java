@@ -215,7 +215,6 @@ public class AndroidRipperStarter {
 
 			boolean model_output_enable = conf.getProperty("model", "0").equals("1");
 			
-			boolean planner_activity_detector_enable = conf.getProperty("detector", "0").equals("1");
 			boolean planner_rotation_enable = conf.getProperty("planner.rotation", "0").equals("1");
 			
 			String ping_max_retry = conf.getProperty("socket.ping_max_retry", "10");
@@ -272,6 +271,10 @@ public class AndroidRipperStarter {
 													// null);
 			String toolsPath = myPath + "/";// conf.getProperty("tools_path",
 											// null);
+
+			String straceEnabled = conf.getProperty("strace", "0");
+			String tcpdumpEnabled = conf.getProperty("tcpdump", "0");
+			boolean explorationWatchdogEnabled = new String(conf.getProperty("exploration_watchdog", "0")).equals("1");
 
 			// validation
 			if (target != null && target.equals("avd")) {
@@ -410,10 +413,9 @@ public class AndroidRipperStarter {
 			String num_events_per_session = new String("0");
 
 			//Planner Configuration
-			Planner.ACTIVITY_DETECTOR_ENABLE = planner_activity_detector_enable;
 			Planner.CAN_CHANGE_ORIENTATION = planner_rotation_enable;
 			
-			planner = new it.unina.android.ripper.planner.ConfigurationBasedPlanner();
+			planner = new it.unina.android.ripper.planner.HandlerBasedPlanner();
 
 			ripperInput = new it.unina.android.shared.ripper.input.XMLRipperInput();
 			ripperOutput = new it.unina.android.shared.ripper.output.XMLRipperOutput();
@@ -537,6 +539,12 @@ public class AndroidRipperStarter {
 				driver.MODEL_OUTPUT_ENABLE = model_output_enable;
 				
 				driver.SLEEP_BEFORE_START_RIPPING=Integer.parseInt(sleep_before_start_ripping);
+
+				driver.TCPDUMP_ENABLED = tcpdumpEnabled != null && tcpdumpEnabled.equals("1");
+				driver.STRACE_ENABLED = straceEnabled != null && straceEnabled.equals("1");
+
+				driver.EXPLORATION_WATCHDOG_ENABLED = explorationWatchdogEnabled;
+
 								
 				if (target.equals("device")) {
 					driver.device = new HardwareDevice(device);

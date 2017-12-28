@@ -37,6 +37,9 @@ import it.unina.android.ripper.scheduler.Scheduler;
 import it.unina.android.ripper.termination.TerminationCriterion;
 import it.unina.android.ripper.tools.actions.Actions;
 import it.unina.android.ripper.tools.logcat.LogcatDumper;
+import it.unina.android.ripper.tools.strace.AdbStraceDumper;
+import it.unina.android.ripper.tools.strace.StraceDumper;
+import it.unina.android.ripper.tools.tcpdump.TcpdumpDumper;
 import it.unina.android.shared.ripper.input.RipperInput;
 import it.unina.android.shared.ripper.model.state.ActivityDescription;
 import it.unina.android.shared.ripper.model.task.Task;
@@ -269,6 +272,36 @@ public abstract class AbstractDriver {
 	 * Finished Status
 	 */
 	public boolean finished = false;
+
+	/**
+	 * tcpdump tool thread holder
+	 */
+	TcpdumpDumper tcpDumper = null;
+	
+	/**
+	 * strace tool thread holder
+	 */
+	StraceDumper straceDumper = null;
+	
+	/**
+	 * Tcpdump enabled
+	 */
+	public boolean TCPDUMP_ENABLED = false;
+		
+	/**
+	 * Strace enabled
+	 */
+	public boolean STRACE_ENABLED = false;
+	
+	/**
+	 * Storage path of capture files
+	 */
+	public String CAPTURE_PATH = null;
+
+	/**
+	 * Exploration Watchdog
+	 */
+	public boolean EXPLORATION_WATCHDOG_ENABLED = false;
 
 	/**
 	 * Constructor
@@ -626,8 +659,7 @@ public abstract class AbstractDriver {
 		}
 
 		if (retryCount > ACK_MAX_RETRY) {
-			// notifyRipperLog("waitAck() : max retry exceded event ack");
-			throw new AckNotReceivedException("waitAck() : max retry exceded event ack");
+			msg = Message.getAckMessage();
 		}
 
 		if (msg == null) {
@@ -784,6 +816,18 @@ public abstract class AbstractDriver {
 
 		Long time = System.currentTimeMillis();
 
+		if(TCPDUMP_ENABLED == true) {
+			if (tcpDumper == null) {
+				tcpDumper = new TcpdumpDumper(AUT_PACKAGE, CAPTURE_PATH, device, time);
+				tcpDumper.start();
+			}
+		}
+		
+		if(STRACE_ENABLED == true) {
+			straceDumper = new AdbStraceDumper(AUT_PACKAGE, CAPTURE_PATH, device, time);
+			straceDumper.start();
+		}
+		
 		if (APK_INSTALLED == false) {
 			// Install APK
 			if (WAIT_BEFORE_INSTALL > 0) {
@@ -918,6 +962,17 @@ public abstract class AbstractDriver {
 	}
 
 	public boolean endRipperTask(boolean end, boolean notify) {
+		
+		if(end && straceDumper != null) {
+			straceDumper.stopProcess();
+			straceDumper = null;
+		}
+		
+		if(end && tcpDumper!=null){
+			tcpDumper.pull();
+			tcpDumper = null;
+		}
+		
 		uninstallAPKs(end);
 
 		if (notify) {
@@ -1072,9 +1127,9 @@ public abstract class AbstractDriver {
 				if (Actions.checkCurrentForegroundActivityPackage(AUT_PACKAGE)) {
 					rsSocket.sendEvent((Event) evt);
 					
-					if (Actions.checkCurrentForegroundActivityPackage(AUT_PACKAGE)) {
-						return this.waitAck();
-					}
+					//if (Actions.checkCurrentForegroundActivityPackage(AUT_PACKAGE)) {
+					return this.waitAck();
+					//}
 				}
 				
 			}

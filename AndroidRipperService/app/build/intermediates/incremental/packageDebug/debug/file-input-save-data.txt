@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Thu Dec 28 12:24:34 CET 2017
+0.baseType=DIRECTORY
+0.base=/home/laboratorio/Desktop/AndroidRipperService/app/build/intermediates/transforms/dexMerger/debug/0
+0.path=classes.dex
+0.set=DEX
+count=1
