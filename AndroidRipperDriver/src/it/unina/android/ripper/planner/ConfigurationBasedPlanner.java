@@ -208,9 +208,14 @@ public class ConfigurationBasedPlanner extends Planner
 			{
 				widgetEventPlanner =  new MenuItemEventPlanner(widgetDescription);
 			}
-			else if (widgetDescription.getSimpleType().equals(SimpleType.LINEAR_LAYOUT))
-			{
-				widgetEventPlanner =  new LinearLayoutEventPlanner(widgetDescription);
+			else if (widgetDescription.getSimpleType().equals(SimpleType.RELATIVE_LAYOUT)) {
+				return null;
+			}
+			else if (widgetDescription.getSimpleType().equals(SimpleType.LINEAR_LAYOUT)) {
+				return null;
+			}
+			else if (widgetDescription.getSimpleType().equals(SimpleType.WEB_VIEW)) {
+				return null;
 			}
 			else
 			{

@@ -79,7 +79,7 @@ public abstract class Planner
 	/**
 	 * Enable SCROLL DOWN event
 	 */
-	public static boolean CAN_SCROLL_DOWN = false;
+	public static boolean CAN_SCROLL_DOWN = true;
 	
 	/**
 	 * Enables SWAP event between TAB VIEWS
@@ -90,11 +90,10 @@ public abstract class Planner
 	 * Enable HOME event
 	 */	
 	public static boolean CAN_GO_BACK_ON_HOME_ACTIVITY = true;
-	
-	/**
-	 * ActivityDetector enable
-	 */
-	public static boolean ACTIVITY_DETECTOR_ENABLE = false;
+
+	public Planner() {
+		super();
+	}
 	
 	/**
 	 * Plan Tasks

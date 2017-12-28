@@ -1,0 +1,88 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:2:1-54:12
+INJECTED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:2:1-54:12
+INJECTED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:2:1-54:12
+INJECTED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:2:1-54:12
+MERGED from [com.android.support:support-v4:21.0.3] /home/laboratorio/.gradle/caches/transforms-1/files-1.1/support-v4-21.0.3.aar/745cc8f3dfedc0fae83d5ec71eedc08f/AndroidManifest.xml:14:4-17:12
+INJECTED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:2:1-54:12
+INJECTED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:2:1-54:12
+INJECTED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:2:1-54:12
+	package
+		ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:3:5-46
+		INJECTED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml
+		INJECTED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:5:5-30
+		INJECTED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml
+		INJECTED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:4:5-28
+		INJECTED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml
+		INJECTED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml
+uses-sdk
+ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:7:5-52
+MERGED from [com.android.support:support-v4:21.0.3] /home/laboratorio/.gradle/caches/transforms-1/files-1.1/support-v4-21.0.3.aar/745cc8f3dfedc0fae83d5ec71eedc08f/AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:support-v4:21.0.3] /home/laboratorio/.gradle/caches/transforms-1/files-1.1/support-v4-21.0.3.aar/745cc8f3dfedc0fae83d5ec71eedc08f/AndroidManifest.xml:15:5-42
+	android:minSdkVersion
+		ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:7:15-40
+uses-permission#android.permission.INTERNET
+ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:10:5-67
+	android:name
+		ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:10:22-64
+uses-permission#android.permission.GET_TASKS
+ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:12:2-65
+	android:name
+		ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:12:19-62
+application
+ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:14:5-52:19
+MERGED from [com.android.support:support-v4:21.0.3] /home/laboratorio/.gradle/caches/transforms-1/files-1.1/support-v4-21.0.3.aar/745cc8f3dfedc0fae83d5ec71eedc08f/AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:support-v4:21.0.3] /home/laboratorio/.gradle/caches/transforms-1/files-1.1/support-v4-21.0.3.aar/745cc8f3dfedc0fae83d5ec71eedc08f/AndroidManifest.xml:16:5-19
+	android:label
+		ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:17:9-41
+	android:icon
+		ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:16:9-45
+	android:allowBackup
+		ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:15:9-35
+	android:theme
+		ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:18:9-40
+activity#it.unina.android.ripper_service.MainActivity
+ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:32:9-39:20
+	android:label
+		ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:34:13-56
+	android:name
+		ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:33:13-72
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:35:13-38:29
+action#android.intent.action.MAIN
+ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:36:17-69
+	android:name
+		ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:36:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:37:17-77
+	android:name
+		ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:37:27-74
+service#it.unina.android.ripper_service.AndroidRipperService
+ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:42:9-51:19
+	android:process
+		ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:43:12-61
+	android:exported
+		ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:44:12-35
+	android:name
+		ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:42:19-55
+intent-filter#.IAndroidRipperService+.IAnrdoidRipperServiceCallback+it.unina.android.ripper_service.ANDROID_RIPPER_SERVICE
+ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:45:13-50:29
+action#it.unina.android.ripper_service.IAndroidRipperService
+ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:46:17-65
+	android:name
+		ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:46:25-62
+action#it.unina.android.ripper_service.IAnrdoidRipperServiceCallback
+ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:47:17-73
+	android:name
+		ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:47:25-70
+action#it.unina.android.ripper_service.ANDROID_RIPPER_SERVICE
+ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:49:17-97
+	android:name
+		ADDED from /home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/AndroidManifest.xml:49:25-94

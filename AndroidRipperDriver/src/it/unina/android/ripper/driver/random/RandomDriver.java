@@ -31,6 +31,7 @@ import it.unina.android.ripper.planner.Planner;
 import it.unina.android.ripper.scheduler.Scheduler;
 import it.unina.android.ripper.termination.TerminationCriterion;
 import it.unina.android.ripper.tools.actions.Actions;
+import it.unina.android.ripper.watchdog.ExplorationWatchdog;
 import it.unina.android.shared.ripper.constants.InteractionType;
 import it.unina.android.shared.ripper.input.RipperInput;
 import it.unina.android.shared.ripper.model.state.ActivityDescription;
@@ -226,6 +227,12 @@ public class RandomDriver extends AbstractDriver {
 							// schedule
 							Task t = scheduler.nextTask();
 
+							//<!-- ExplorationWatchdog
+							if (EXPLORATION_WATCHDOG_ENABLED == true && ExplorationWatchdog.getInstance().check(activity, t)) {
+								throw new RipperRuntimeException(RandomDriver.class, "rippingLoop", "Exploration Watchdog!");
+							}
+							//ExplorationWatchdog -->
+
 							if (t == null) {
 								notifyRipperLog("No scheduled task!");
 
@@ -248,6 +255,7 @@ public class RandomDriver extends AbstractDriver {
 
 									nTasks++;
 									nEvents++;
+									notifyRipperLog("#Events = " + nEvents);
 
 								} else if ((msg != null && msg.isTypeOf(MessageType.FAIL_MESSAGE))) {
 

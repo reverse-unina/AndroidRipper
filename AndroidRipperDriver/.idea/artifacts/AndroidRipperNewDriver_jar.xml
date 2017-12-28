@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="AndroidRipperNewDriver:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/AndroidRipperNewDriver_jar</output-path>
+    <root id="archive" name="AndroidRipperNewDriver.jar">
+      <element id="module-output" name="AndroidRipperNewDriver" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/custom_gson_2.8.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/commons-lang3-3.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/lib/junit.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

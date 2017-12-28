@@ -1,0 +1,120 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/laboratorio/AndroidRipper/AndroidRipperService/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "map": [
+                {
+                    "source": "/home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/res/values/dimens.xml",
+                    "from": {
+                        "startLines": "3,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "89,147",
+                        "endColumns": "57,55",
+                        "endOffsets": "142,198"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,113",
+                        "endColumns": "57,55",
+                        "endOffsets": "108,164"
+                    }
+                },
+                {
+                    "source": "/home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "5,3,6,4",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "175,56,228,114",
+                        "endColumns": "52,57,52,60",
+                        "endOffsets": "223,109,276,170"
+                    },
+                    "to": {
+                        "startLines": "4,5,6,7",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "169,222,280,333",
+                        "endColumns": "52,57,52,60",
+                        "endOffsets": "217,275,328,389"
+                    }
+                },
+                {
+                    "source": "/home/laboratorio/AndroidRipper/AndroidRipperService/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "6,15",
+                        "startColumns": "4,4",
+                        "startOffsets": "186,510",
+                        "endLines": "12,17",
+                        "endColumns": "12,12",
+                        "endOffsets": "472,665"
+                    },
+                    "to": {
+                        "startLines": "8,15",
+                        "startColumns": "4,4",
+                        "startOffsets": "394,685",
+                        "endLines": "14,17",
+                        "endColumns": "12,12",
+                        "endOffsets": "680,840"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/laboratorio/Desktop/AndroidRipperService/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "map": [
+                {
+                    "source": "/home/laboratorio/Desktop/AndroidRipperService/app/src/main/res/values/dimens.xml",
+                    "from": {
+                        "startLines": "3,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "89,147",
+                        "endColumns": "57,55",
+                        "endOffsets": "142,198"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,113",
+                        "endColumns": "57,55",
+                        "endOffsets": "108,164"
+                    }
+                },
+                {
+                    "source": "/home/laboratorio/Desktop/AndroidRipperService/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "5,3,6,4",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "175,56,228,114",
+                        "endColumns": "52,57,52,60",
+                        "endOffsets": "223,109,276,170"
+                    },
+                    "to": {
+                        "startLines": "4,5,6,7",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "169,222,280,333",
+                        "endColumns": "52,57,52,60",
+                        "endOffsets": "217,275,328,389"
+                    }
+                },
+                {
+                    "source": "/home/laboratorio/Desktop/AndroidRipperService/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "6,15",
+                        "startColumns": "4,4",
+                        "startOffsets": "186,510",
+                        "endLines": "12,17",
+                        "endColumns": "12,12",
+                        "endOffsets": "472,665"
+                    },
+                    "to": {
+                        "startLines": "8,15",
+                        "startColumns": "4,4",
+                        "startOffsets": "394,685",
+                        "endLines": "14,17",
+                        "endColumns": "12,12",
+                        "endOffsets": "680,840"
+                    }
+                }
+            ]
+        }
+    ]
+}
